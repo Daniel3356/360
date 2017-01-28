@@ -1,0 +1,185 @@
+.product_view >img
+{
+    position: relative;
+    display: block;
+    top: 50%;
+    width: auto;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);  
+}
+
+.product_view #topContainer
+{
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_view #imageContainer
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 1;
+    
+    overflow: hidden;
+}
+
+.product_view .image
+{
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.product_view .imageInvisible
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.product_view .imageOpaque
+{
+    position: absolute;
+    opacity: 0.5;
+    
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.product_view .imageVisible
+{
+    position: absolute;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.product_view #hotspotcanvas
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 8;
+    cursor: ew-resize;
+    height: 100%;
+}
+
+.product_view #zoomContainer
+{
+    position: relative;
+    z-index: 9;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    display: none;
+}
+
+.product_view #draggableContainer
+{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: move;
+}
+
+.product_view #controllerContainer
+{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+	
+    padding: 8px;
+}
+
+.product_view #logoContainer
+{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.product_view #logoContainer img
+{
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: auto;
+    height: auto;
+
+    -ms-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.product_view #deepzoom
+{
+    display: inline-block;
+    color: #1390ff;
+}
+
+.product_view #topContainer:-webkit-full-screen
+{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background: none;
+    background-color: #ffffff;
+}
+
+.product_view #topContainer:-moz-full-screen
+{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background: none;
+    background-color: #ffffff;
+}
+
+.product_view #topContainer:-ms-fullscreen
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.product_view #topContainer:fullscreen
+{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background: none;
+    background-color: #ffffff;
+}

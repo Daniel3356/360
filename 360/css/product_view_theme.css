@@ -1,0 +1,66 @@
+.product_view .play
+{
+    background-image: url("toolbar/play-button.png");
+}
+
+.product_view .pause
+{
+    background-image: url("toolbar/pause-button.png");
+}
+
+.product_view #prev
+{
+    background-image: url("toolbar/left-arrow.png");
+}
+
+.product_view #next
+{
+    background-image: url("toolbar/right-arrow.png");
+}
+
+.product_view .zoomin
+{
+    background-image: url("toolbar/zoom-in.png");
+}
+
+.product_view .zoomout
+{
+    background-image: url("toolbar/zoom-out.png");
+}
+
+.product_view #fullscreen
+{
+    background-image: url("toolbar/fullscreen.png");
+}
+
+.product_view #play,.product_view  #prev,.product_view  #next,.product_view  #zoomin,.product_view  #fullscreen
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+    -ms-transition: all 150ms ease-out;
+    transition: all 150ms ease-out;
+}
+
+.product_view #play:hover, .product_view #prev:hover, .product_view #next:hover, .product_view  #zoomin:hover, .product_view  #fullscreen:hover
+{
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+.product_view #play:active, .product_view #prev:active, .product_view #next:active, .product_view #zoomin:active, .product_view #fullscreen:active
+{
+    opacity: 0.5;
+}
+.product_view #deepzoom
+{
+    display: inline-block;
+    color: #1390ff;
+}
